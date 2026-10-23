@@ -14,6 +14,7 @@ from datetime import datetime
 import os
 
 app = Flask(__name__)
+APP_VERSION = "v2"
 DB_NAME = os.environ.get("DB_PATH", os.path.join(os.path.dirname(__file__), "tasks.db"))
 
 
